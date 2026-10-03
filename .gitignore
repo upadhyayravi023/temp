@@ -1,0 +1,66 @@
+# ─── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+
+# ─── PyInstaller ──────────────────────────────────────────────────────────────
+# Note: .spec files ARE tracked (needed to rebuild the launchers)
+dist/
+build/
+
+# ─── Secrets / Environment ────────────────────────────────────────────────────
+.env
+!.env.example
+
+# ─── Runtime / Logs ───────────────────────────────────────────────────────────
+*.log
+agent.log
+
+# ─── Driver install flag files ────────────────────────────────────────────────
+.pending_reboot
+.install_driver_after_reboot
+.blocklist_was_disabled
+
+# ─── Compiled binaries (pre-built releases are checked in intentionally) ──────
+# agent.exe is excluded — it is 230 MB and exceeds GitHub's 100 MB file limit.
+# Run: cd "My Project/agent" && pyinstaller updater.spec   to rebuild it locally.
+My Project/agent/agent.exe
+# Uncomment the lines below if you want to exclude all EXEs from source control.
+# *.exe
+# *.dll
+# *.lib
+
+# ─── C++ build artifacts ──────────────────────────────────────────────────────
+*.obj
+*.o
+*.pdb
+*.ilk
+*.exp
+*.iobj
+*.ipdb
+
+# ─── Windows ──────────────────────────────────────────────────────────────────
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# ─── VS / JetBrains IDEs ──────────────────────────────────────────────────────
+.vs/
+.vscode/
+*.suo
+*.user
+*.sln.docstates
+*.idea/
+
+# ─── PyInstaller temp ─────────────────────────────────────────────────────────
+interception_tmp/
+C:/interception_tmp/
